@@ -4,34 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Of Information Technology | Enterprise IT Solutions</title>
-    <!-- Updated CSP to securely allow structural frameworks and embedding maps -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://unsplash.com data:; frame-src 'self' https://google.com;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #e0f2fe; color: #0f172a; margin: 0; padding: 0; scroll-behavior: smooth; }
-        
-        /* Premium Header Integration */
-        header { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); padding: 50px 20px; text-align: center; border-bottom: 5px solid #0369a1; color: #ffffff; box-shadow: inset 0 -10px 20px rgba(0,0,0,0.05); }
+        header { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); padding: 50px 20px; text-align: center; border-bottom: 5px solid #0369a1; color: #ffffff; }
         .header-logo-container { display: flex; align-items: center; justify-content: center; gap: 25px; margin-bottom: 10px; flex-wrap: wrap; }
         .main-logo { max-height: 110px; width: auto; object-fit: contain; border-radius: 50%; border: 4px solid #ffffff; box-shadow: 0 10px 25px rgba(2,132,199,0.3); }
-        header h1 { margin: 0; font-size: 3rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.15); letter-spacing: -0.5px; }
+        header h1 { margin: 0; font-size: 3rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.15); }
         header p { margin: 12px 0 0 0; color: #bae6fd; font-size: 1.35rem; font-weight: 500; }
         
-        /* Sticky Professional Navigation */
         nav { background: #0369a1; padding: 18px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        nav a { color: #ffffff; margin: 0 20px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: color 0.2s; }
+        nav a { color: #ffffff; margin: 0 20px; text-decoration: none; font-weight: 600; font-size: 1.1rem; }
         nav a:hover { color: #bae6fd; }
         
         .main-container { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
-        
         .section-box { background: #ffffff; padding: 40px; border-radius: 16px; margin-bottom: 45px; border-left: 8px solid #0284c7; box-shadow: 0 10px 30px -5px rgba(2,132,199,0.08); }
         .section-box h2 { margin-top: 0; color: #0369a1; font-size: 2rem; border-bottom: 2px solid #f1f5f9; padding-bottom: 15px; margin-bottom: 20px; }
         .section-box p { line-height: 1.8; color: #334155; font-size: 1.15rem; }
         
-        /* Modernized Service Pricing Layout */
         .grid { display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between; margin-bottom: 50px; }
-        .card { background: #ffffff; width: 31%; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 10px 30px -5px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 20px 35px -10px rgba(2,132,199,0.15); }
+        .card { background: #ffffff; width: 31%; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 10px 30px -5px rgba(0,0,0,0.05); }
         @media(max-width: 900px) { .card, .info-card { width: 100% !important; margin-bottom: 20px; } }
         .card img { width: 100%; height: 220px; object-fit: cover; }
         .card-content { padding: 30px; }
@@ -39,34 +32,26 @@
         .card-content p { color: #475569; font-size: 1rem; line-height: 1.6; margin-bottom: 20px; }
         .tag { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 5px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; margin-bottom: 12px; }
         
-        /* Interactive Form Framework Styling */
         .form-group { margin-bottom: 20px; text-align: left; }
-        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #334155; font-size: 0.95rem; }
-        .form-control { width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid #cbd5e1; background: #f8fafc; font-size: 1rem; color: #0f172a; box-sizing: border-box; transition: border-color 0.2s; }
-        .form-control:focus { outline: none; border-color: #0284c7; background: #ffffff; }
-        .form-submit-btn { background: #0284c7; color: #ffffff; border: none; padding: 14px 28px; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; width: 100%; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #334155; }
+        .form-control { width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid #cbd5e1; background: #f8fafc; font-size: 1rem; box-sizing: border-box; }
+        .form-submit-btn { background: #0284c7; color: #ffffff; border: none; padding: 14px 28px; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer; width: 100%; }
         .form-submit-btn:hover { background: #0369a1; }
         
         .info-grid { display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between; margin-bottom: 45px; }
-        .info-card { background: #ffffff; width: 48%; padding: 35px; border-radius: 16px; border: 1px solid #e2e8f0; box-sizing: border-box; box-shadow: 0 10px 30px -5px rgba(0,0,0,0.05); }
+        .info-card { background: #ffffff; width: 48%; padding: 35px; border-radius: 16px; border: 1px solid #e2e8f0; box-sizing: border-box; }
         .info-card h3 { color: #0369a1; margin-top: 0; font-size: 1.6rem; border-bottom: 2px solid #e0f2fe; padding-bottom: 12px; }
         .info-list { list-style: none; padding: 0; }
-        .info-list li { margin: 18px 0; color: #334155; font-size: 1.1rem; line-height: 1.6; }
-        .info-list strong { color: #0f172a; }
-        
-        /* Maps Frame Container */
+        .info-list li { margin: 18px 0; color: #334155; font-size: 1.1rem; }
         .map-wrapper { width: 100%; height: 350px; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; margin-top: 20px; }
-
-        footer { text-align: center; padding: 50px 20px; color: #64748b; margin-top: 80px; border-top: 1px solid #cbd5e1; background: #f8fafc; font-size: 1rem; }
-        footer a { color: #0369a1; text-decoration: none; font-weight: bold; }
-        footer a:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 50px 20px; color: #64748b; margin-top: 80px; border-top: 1px solid #cbd5e1; background: #f8fafc; }
     </style>
 </head>
 <body>
 
     <header>
         <div class="header-logo-container">
-            <img src="logo.png" alt="Logo" class="main-logo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://w3.org\' viewBox=\'0 0 24 24\' fill=\'%23ffffff\'><path d=\'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z\'/></svg>';">
+            <img src="logo.png" alt="Logo" class="main-logo" onerror="this.style.display='none';">
             <h1>World Of Information Technology</h1>
         </div>
         <p>Expert Enterprise Infrastructure · Managed IT Support · Global Cyber Defense</p>
@@ -82,42 +67,39 @@
 
     <div class="main-container">
         
-        <!-- EXECUTIVE STATEMENT -->
         <div class="section-box" id="about">
             <h2>Corporate Profile</h2>
-            <p>Welcome to <strong>World Of Information Technology</strong>, directed by senior IT Consultant <strong>Talha Mir</strong>. Strategically headquartered in KPK, Pakistan, our agency designs and deploys robust digital engineering solutions, modern server environments, and secure perimeter firewalls. We empower regional and global enterprises with high-availability systems engineered to scale seamlessly and minimize technical liabilities.</p>
+            <p>Welcome to <strong>World Of Information Technology</strong>, directed by senior IT Consultant <strong>Talha Mir</strong>. Strategically headquartered in KPK, Pakistan, our agency designs and deploys robust digital engineering solutions, modern server environments, and secure perimeter firewalls.</p>
         </div>
 
-        <!-- CAPABILITIES MATRIX -->
         <h2 style="color: #0369a1; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; margin-bottom: 30px;" id="services">Core Solutions Portfolio</h2>
         <div class="grid">
             <div class="card">
-                <img src="https://unsplash.com/photo-1563986768609-322da13575f3?w=500" alt="Cybersecurity Platform">
+                <img src="https://unsplash.com/photo-1563986768609-322da13575f3?w=500" alt="Cybersecurity">
                 <div class="card-content">
                     <span class="tag">CYBER DEFENSE</span>
                     <h3>Advanced Penetration Audits</h3>
-                    <p>Comprehensive vulnerability lifecycle tracking, secure code evaluation, and customized UFW/IPTables appliance configurations engineered to protect sensitive relational enterprise databases.</p>
+                    <p>Vulnerability tracking, secure code evaluation, and customized firewall configurations engineered to protect sensitive relational networks.</p>
                 </div>
             </div>
             <div class="card">
-                <img src="https://unsplash.com/photo-1558494949-ef010cbdcc31?w=500" alt="Data Core Infrastructure">
+                <img src="https://unsplash.com/photo-1558494949-ef010cbdcc31?w=500" alt="Networks">
                 <div class="card-content">
                     <span class="tag">INFRASTRUCTURE</span>
                     <h3>High-Availability Networks</h3>
-                    <p>Complete structural provisioning of redundant backup nodes, local cloud synchronization matrices, and end-to-end traffic latency assessments for optimal asset processing speed.</p>
+                    <p>Complete structural provisioning of redundant backup nodes and cloud synchronization matrices for optimal data processing speed.</p>
                 </div>
             </div>
             <div class="card">
-                <img src="https://unsplash.com/photo-1600132806370-bf17e65e942f?w=500" alt="Enterprise Technical Consulting">
+                <img src="https://unsplash.com/photo-1600132806370-bf17e65e942f?w=500" alt="Consulting">
                 <div class="card-content">
                     <span class="tag">CONSULTING</span>
                     <h3>Strategic Systems Helpdesk</h3>
-                    <p>24/7 priority diagnostic isolation for enterprise server networks, production mainframes, operational containers, and large-scale localized operating platforms.</p>
+                    <p>24/7 priority diagnostic isolation for enterprise server networks, production mainframes, and specialized local setups.</p>
                 </div>
             </div>
         </div>
 
-        <!-- DYNAMIC CONTACT & LOCALIZATION MAP -->
         <h2 style="color: #0369a1; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; margin-bottom: 30px;" id="contact">Regional Communication Hub</h2>
         <div class="info-grid">
             <div class="info-card">
@@ -125,9 +107,33 @@
                 <ul class="info-list">
                     <li><strong>Managing Director:</strong> Talha Mir</li>
                     <li><strong>Direct Line:</strong> +92 371 1518699</li>
-                    <li><strong>Corporate Mail:</strong> <a href="mailto:talhamirp2013@gmail.com" style="color: #0284c7; text-decoration: none; font-weight: bold;">talhamirp2013@gmail.com</a></li>
+                    <li><strong>Corporate Mail:</strong> <a href="mailto:info.workdofit92@gmail.com" style="color: #0284c7; text-decoration: none; font-weight: bold;">info.workdofit92@gmail.com</a></li>
                     <li><strong>Operational Hours:</strong> Monday - Saturday (9:00 AM - 6:00 PM PKT)</li>
                 </ul>
             </div>
             <div class="info-card">
                 <h3>HQ Physical Address</h3>
+                <p style="margin: 0; font-size: 1.1rem; color: #334155;">Tahsil Pabbi, District Nowshera, KPK, Pakistan</p>
+                <div class="map-wrapper">
+                    <iframe src="https://google.com/maps/embed?pb=!1m18!1m12!1m3!1d52924.47192661073!2d71.77457785!3d33.9981881!2m3!1f0;2f0;3f0;3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d933cd327a3c31%3A0xe962e22c0ffbd648!2sPabbi%2C%20Nowshera%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-box" id="inquiry" style="border-left-color: #10b981;">
+            <h2>Submit a Technical Project Proposal</h2>
+            <p style="margin-bottom: 25px;">Need network configuration or systems hardening? Submit your specifications directly to Talha Mir below.</p>
+            <form action="https://formspree.io" method="POST">
+                <div class="form-group">
+                    <label>Your Full Name / Organization</label>
+                    <input type="text" name="name" class="form-control" required placeholder="e.g. Ahmad Khan">
+                </div>
+                <div class="form-group">
+                    <label>Official Contact Email Address</label>
+                    <input type="email" name="_replyto" class="form-control" required placeholder="e.g. client@company.com">
+                </div>
+                <div class="form-group">
+                    <label>Required Technical Domain</label>
+                    <select name="domain" class="form-control">
+                        <option value="Cyber Security Audit">Cyber Security Audit</option>
+                        <option value="Managed Network Setup">Managed Server Network Setup</option>
